@@ -1,0 +1,11 @@
+while True:
+    try:
+        a = int(input("enter  first no: "))
+        b= int(input("Enter a second no: "))
+        c=a/b
+        print("Div is ",c)
+        break
+    except ValueError:
+        print("please  input digits only Try again")
+    except ZeroDivisionError:
+        print("Denominator should not be 0. Try again")
